@@ -1,0 +1,19 @@
+RESPUESTA 1:
+
+Las coroutines son un mecanismo que permiten escribir un código asincrono de manera secuencial y estructurada. La principal diferencia con los hilos, es que en las coroutines se tiene control a la hora de suspenderlas y reanudarlas; ademas que permite que el hilo subyacente siga haciendo tareas mientras la coroutine esta suspendida. 
+
+RESPUESTA 2:
+
+Es importante ya que permite que en el hilo subyacente se sigan realizando tareas. Ademas que cuando se suspende, el hilo que estaba usando se libera para que otras coroutines puedan utilizarlo.
+
+RESPUESTA 3:
+
+Dsipatcher se encarga de especificar en que hilo/s se ejecutara la coroutine. El dispatcher se divide en 3 principales segun el uso que se le quiere dar:
+
+-Dispatcher.Main: para actualizar la UI o acciones relacionadas a ella
+-Dispatcher.IO: para operaciones de entrada y salida
+-Dispatcher.Default: para tareas de computación intensiva
+
+RESPUESTA 4:
+
+Async es un constructor que se usa para crear coroutines. Y su principal función es ejecutar tareas recurrentesy combinar resultados.
